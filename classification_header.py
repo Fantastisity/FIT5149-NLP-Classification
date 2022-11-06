@@ -36,7 +36,7 @@ from tensorflow_addons.losses import SigmoidFocalCrossEntropy
 from sklearn.utils import class_weight
 
 # Function for plotting confusion matrix and classification report
-def plot_conf(ytest, ypred, name = "Confuction Matrix"):
+def plot_conf(ytest, ypred, name = "Confusion Matrix"):
     conf_mat = confusion_matrix(ytest, ypred)
     plt.figure(figsize=(17,4))
     # display number of false positives, false negatives, true positives, and true negatives respectively
